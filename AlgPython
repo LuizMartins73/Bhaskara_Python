@@ -1,0 +1,19 @@
+a = complex(input("Digite o coeficiente a:"))
+b = complex(input("Digite o coeficiente b:"))
+c = complex(input("Digite o coeficiente c:"))
+
+
+d = complex((b**2) - 4*a*c)
+
+if d==0 :
+    x1=-b/(2*a)
+    print("Existe somente uma raiz:",x1)
+elif a==0:
+    x1=-c/b
+    print("A equação é do 1º grau, sendo sua raiz:",x1)
+elif (a==0) and (c==0):
+    print("A equação possui raiz 0")    
+else :
+    x1 = ((-b+(d**0.5))/(2*a))    
+    x2 = ((-b-(d**0.5))/(2*a)) 
+    print ("A equação possui duas raízes:",x1,",",x2)    
